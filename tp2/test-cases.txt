@@ -1,0 +1,35 @@
+casos de prueba:
+
+# dos soluciones
+f1 = x**2 + y**2 + z**2 - 16
+f2 = x + y - z**2
+f3 = x**2 + y -3*z
+
+f1 = x + y + z - 3
+f2 = x**2 + y**2 + z**2 - 5
+f3 = sym.exp(x) + x*y - x*z - 1
+
+# una unica solucion
+f1 = x + y + z
+f2 = x*y - z
+f3 = x + y - z
+
+# infinitas soluciones
+f1 = x + y + z
+f2 = x + y
+f3 = x + y - z
+
+# con trigonometricas
+f1 = sym.cos(x) + sym.cos(y) - z
+f2 = x**2  + 3y**2 - z
+f3 = x + y - z
+
+# infinitas soluciones periodicas
+f1 = 2*sym.cos(x)*sym.sin(y) - z
+f2 = z - 2
+f3 = x
+
+# 2 soluciones muy cercanas
+f1 = x**2 + y**2 - z
+f2 = -x**2 - y**2 - z + 1/8
+f3 = x**2 - y - z - 0.1
